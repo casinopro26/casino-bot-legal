@@ -2,32 +2,15 @@
 
 This document explains how to run the bot and use all commands. Commands are grouped by game or feature.
 
-## Setup
+## Add the Bot to Your Server
 
-1) Install dependencies:
-   npm install
+CasinoBot is installed from Discord’s Discovery / App Directory. You do not need to run any code locally.
 
-2) Create a Discord application and bot:
-   - Go to the Discord Developer Portal
-   - Create a new application
-   - Add a bot to the application
-   - Copy the bot token
-   - Copy the Application ID (Client ID)
+1) Open the bot’s listing in the Discord App Directory.
+2) Click Add to Server.
+3) Choose your server and authorize the requested permissions.
 
-3) Invite the bot to your server:
-   - In OAuth2 -> URL Generator, select scopes: bot, applications.commands
-   - Select permissions: View Channels, Send Messages
-   - Open the generated URL and invite the bot
-
-4) Create a .env file at the repo root:
-   DISCORD_TOKEN=your_token_here
-   DISCORD_CLIENT_ID=your_application_id
-   ADMIN_USER_ID=your_discord_user_id (optional, for /grant)
-
-5) Run the bot:
-   npm run start
-
-Slash commands can take some time to appear globally (up to about 1 hour).
+After installing, slash commands are available in your server (they may take a short time to show).
 
 ## General Commands
 
@@ -83,5 +66,5 @@ Slash commands can take some time to appear globally (up to about 1 hour).
 
 ## Notes
 
-- All games use fake currency stored in SQLite.
-- Balances persist in data/casino.sqlite.
+- All games use fake currency only.
+- Use /bal to check your current balance at any time.
